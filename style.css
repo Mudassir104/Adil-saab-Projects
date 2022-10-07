@@ -41,3 +41,22 @@ body {
 .container-fluid#room img {
   background-size: cover;
 }
+
+.container-fluid#bottom {
+  background-color: black;
+  color: white;
+  padding: 7%;
+}
+.container-fluid#footer {
+  background-color: #59e5eb;
+}
+.container-fluid#bottom .row:nth-child(1) {
+  margin-left: 5%;
+}
+.container-fluid#footer .col-2 > img {
+  margin-top: 5px;
+}
+.container-fluid#footer .col-9 > p {
+  font-size: large;
+  margin-top: 15px;
+}
