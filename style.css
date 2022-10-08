@@ -27,11 +27,20 @@ body {
   margin-top: 20px;
   /* height: 120px; */
 }
+.container-fluid#our-services .row {
+  padding: 1.5rem;
+}
 .services {
   margin-left: 3%;
 }
 .services .email {
+  font-size: x-large;
+  font-weight: bolder;
   margin-left: 10%;
+}
+.services i {
+  font-size: x-large;
+  font-weight: bolder;
 }
 .services p {
   display: inline;
@@ -65,6 +74,63 @@ body {
 .container-fluid#footer .col-9 > p {
   font-size: large;
   margin-top: 15px;
+}
+@media screen and (max-width: 918px) {
+  #services .email,
+  #services i {
+    font-size: large;
+    font-weight: bolder;
+  }
+}
+@media screen and (max-width: 700px) {
+  #services .email,
+  #services i {
+    font-size: small;
+    font-weight: bolder;
+  }
+  .container-fluid#bottom .row:nth-child(1) h1 {
+    font-size: large;
+  }
+  .container-fluid#bottom .row:nth-child(1) h2 {
+    font-size: large;
+  }
+  .row#bottom-navbar {
+    /* background-color: #59e5eb; */
+    font-size: small;
+  }
+}
+@media screen and (max-width: 530px) {
+  .container-fluid#our-services .row {
+    padding-left: 0;
+  }
+  #services .email,
+  #services i {
+    font-size: x-small;
+    font-weight: bolder;
+  }
+  .row#bottom-navbar {
+    font-size: x-small;
+  }
+  .container-fluid#footer .col-9 > p {
+    font-size: small;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .container-fluid#bottom .row:nth-child(1) h2 {
+    font-size: ;
+  }
+  #services .email,
+  #services i {
+    font-size: xx-small;
+    font-weight: bolder;
+  }
+  .container-fluid#bottom .row:nth-child(1) h1 {
+    font-size: small;
+  }
+  .container-fluid#bottom .row:nth-child(1) h2 {
+    font-size: small;
+  }
 }
 
 /* contact form */
