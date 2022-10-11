@@ -25,7 +25,9 @@ body {
 }
 #details {
   margin-top: 20px;
-  /* height: 120px; */
+}
+#details.row {
+  padding: 1.5rem;
 }
 .container-fluid#our-services .row {
   padding: 1.5rem;
@@ -75,63 +77,6 @@ body {
   font-size: large;
   margin-top: 15px;
 }
-@media screen and (max-width: 918px) {
-  #services .email,
-  #services i {
-    font-size: large;
-    font-weight: bolder;
-  }
-}
-@media screen and (max-width: 700px) {
-  #services .email,
-  #services i {
-    font-size: small;
-    font-weight: bolder;
-  }
-  .container-fluid#bottom .row:nth-child(1) h1 {
-    font-size: large;
-  }
-  .container-fluid#bottom .row:nth-child(1) h2 {
-    font-size: large;
-  }
-  .row#bottom-navbar {
-    /* background-color: #59e5eb; */
-    font-size: small;
-  }
-}
-@media screen and (max-width: 530px) {
-  .container-fluid#our-services .row {
-    padding-left: 0;
-  }
-  #services .email,
-  #services i {
-    font-size: x-small;
-    font-weight: bolder;
-  }
-  .row#bottom-navbar {
-    font-size: x-small;
-  }
-  .container-fluid#footer .col-9 > p {
-    font-size: small;
-    margin-top: 15px;
-  }
-}
-@media screen and (max-width: 410px) {
-  .container-fluid#bottom .row:nth-child(1) h2 {
-    font-size: ;
-  }
-  #services .email,
-  #services i {
-    font-size: xx-small;
-    font-weight: bolder;
-  }
-  .container-fluid#bottom .row:nth-child(1) h1 {
-    font-size: small;
-  }
-  .container-fluid#bottom .row:nth-child(1) h2 {
-    font-size: small;
-  }
-}
 
 /* contact form */
 #contact-form {
@@ -176,11 +121,76 @@ body {
 }
 
 /* About us css */
-
-.container-fluid#about-us .images.container {
-}
 .container-fluid#about-us .images.container .card-img-top {
   height: 361px;
   width: 286px;
   object-fit: cover;
+}
+#about-us-row {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#about-us-row .card {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 918px) {
+  #services .email,
+  #services i {
+    font-size: large;
+    font-weight: bolder;
+  }
+}
+@media screen and (max-width: 700px) {
+  #services .email,
+  #services i {
+    font-size: small;
+    font-weight: bolder;
+  }
+  .container-fluid#bottom .row:nth-child(1) h1 {
+    font-size: large;
+  }
+  .container-fluid#bottom .row:nth-child(1) h2 {
+    font-size: large;
+  }
+  .row#bottom-navbar {
+    /* background-color: #59e5eb; */
+    font-size: small;
+  }
+}
+@media screen and (max-width: 530px) {
+  #details.row {
+    padding: 0.5rem;
+  }
+  .container-fluid#our-services .row {
+    padding-left: 0;
+  }
+  #services .email,
+  #services i {
+    font-size: x-small;
+    font-weight: bolder;
+  }
+  .row#bottom-navbar {
+    font-size: x-small;
+  }
+  .container-fluid#footer .col-9 > p {
+    font-size: small;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 410px) {
+  #services .email,
+  #services i {
+    font-size: xx-small;
+    font-weight: bolder;
+  }
+  .container-fluid#bottom .row:nth-child(1) h1 {
+    font-size: small;
+  }
+  .container-fluid#bottom .row:nth-child(1) h2 {
+    font-size: small;
+  }
+  .container-fluid#about-us h3 {
+    font-size: small;
+  }
 }
